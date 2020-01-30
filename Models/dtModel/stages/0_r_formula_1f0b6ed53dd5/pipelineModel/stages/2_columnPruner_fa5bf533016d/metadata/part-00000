@@ -1,0 +1,1 @@
+{"class":"org.apache.spark.ml.feature.ColumnPruner","timestamp":1580161331383,"sparkVersion":"2.4.0","uid":"columnPruner_fa5bf533016d","paramMap":{},"defaultParamMap":{}}

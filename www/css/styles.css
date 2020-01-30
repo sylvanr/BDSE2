@@ -1,0 +1,293 @@
+/* Fixes material icons bug */
+.fa, .far, .fas {
+	font-family: "Font Awesome 5 Free" !important;
+	font-weight: 900 !important;
+}
+
+/* General CSS */
+.container-fluid {
+	padding: 0;
+}
+
+.content-wrapper {
+	background-image: url(/images/background.png);
+	background-repeat-x: no-repeat;
+	background-size: cover;
+}
+
+/* All buttons except for the back buttons */
+button:not(.back-button) {
+	box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12) !important;
+}
+
+button:hover:not(.back-button) {
+	transition: box-shadow .28s cubic-bezier(.4,0,.2,1), -webkit-box-shadow .28s cubic-bezier(.4,0,.2,1);
+}
+
+/* Back buttons */
+.back-button {
+	height: 35px !important;
+	width: 70px !important;
+	color: var(--main-color);
+	padding: 0 15px 0 15px;
+	border: 1px solid var(--main-color);
+	background-color: transparent;
+	font-weight: bold;
+}
+
+.back-button:active, .back-button:hover {
+	color: var(--main-color-shade);
+	border: 1px solid var(--main-color-shade);
+}
+
+/* Filter area */
+.main-sidebar {
+	background-color: var(--main-text-color) !important;
+}
+
+/* Cards */
+.card {
+	width: 90%;
+	max-width: 80%;
+	margin: 25px auto;
+	padding: 5px 0;
+	background-color: white;
+	text-align: center;
+	box-shadow: 0 3px 1px -2px rgba(0, 0 , 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12) !important
+}
+
+.card img {
+	width: 100%;
+}
+
+/* Header of all of the pages */
+.header-current-page{
+	display: flex;
+}
+
+.header-current-page h1{
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 120px;
+}
+
+.main-header .navbar {
+	background-color: var(--main-text-color) !important;
+}
+
+.navbar-custom-menu, .navbar-custom-menu .navbar-nav {
+	width: 100%;
+}
+
+.navbar-custom-menu .navbar-nav li {
+	text-align: center;
+	width: calc(22% - 10px);
+	float: right;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.navbar-custom-menu .navbar-nav li a{
+	border-top: 3px solid transparent;
+}
+
+.active-tab > a {
+	color: var(--main-text-color) !important;
+	background-color: #E2E2E2 !important;
+	border-top: 3px solid var(--main-color) !important;
+}
+
+.active-tab {
+	background-image: url(/images/background_light.png) !important;
+}
+
+.logo {
+	background-color: var(--main-text-color) !important;
+}
+
+.skin-blue .main-header .navbar .nav>li>a {
+	color: #f5f5f5;
+}
+
+#IDMain > img {
+	width: 100px;
+}
+
+
+/* Language icons */
+.languageIcon {
+	width: 32px !important;
+	margin: 8px;
+	height: 32px;
+	background-size: cover;
+	background-position: center;
+	float: left !important;
+}
+
+/* Main pages buttons */
+.mainButtonWrapper {
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+}
+
+.button-main-menus {
+	margin: 20px;
+	font-weight: bold;
+	border: none;
+	width: 250px !important;
+	height: 250px !important;
+	background-color: var(--main-color) !important;
+	background-size: 250px 250px;
+	border-radius: 10px;
+}
+
+.button-main-menus span {
+	position: relative;
+	color: white;
+	z-index: 0;
+	font-size: 20px;
+	font-weight: normal;
+	top: 4.4em;
+}
+
+/* Filter button */
+#IDClearFilterButton {
+	margin: 0 auto;
+	height: 35px !important;
+	width: 130px !important;
+	color: white;
+	background-color: var(--main-color);
+	border: 0;
+	box-shadow: 0;
+}
+
+#IDClearFilterButton:hover {
+	background-color: var(--main-color-shade);
+}
+
+/* Export button */
+#IDButtonPlayerExportToPdf {
+	margin-left: 10px;
+	margin-right: -110px;
+	height: 35px !important;
+	width: 130px !important;
+	color: white;
+	border: 1px solid var(--main-color);
+	background-color: var(--main-color);
+	font-weight: bold;
+}
+
+#IDButtonPlayerExportToPdf:hover {
+	background-color: var(--main-color-shade);
+	border: 1px solid var(--main-color-shade);
+}
+
+/* Checkboxes in filter area */
+#sidebarItemExpanded input[type=checkbox] {
+	position: absolute;
+	z-index: -1000;
+	left: -1000px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+}
+
+#sidebarItemExpanded input[type=checkbox] + span {
+	padding-left: 23px;
+	display: inline-block;
+	line-height: 15px;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: 15px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+#sidebarItemExpanded input[type=checkbox]:checked + span {
+	background-position: 0 -15px;
+	background-size: 15px 30px;
+}
+
+#sidebarItemExpanded input[type=checkbox] + span {
+	background-image:url(/images/checkbox.png);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/* Frontpage */
+.mainPage-frontpage{
+	width: 70%;
+	margin: 40px auto 40px auto;
+}
+
+.mainPage-aboutApp {
+	text-align: right;
+	display: flex !important;
+	flex-direction: row-reverse !important;
+}
+
+.mainPage-frontpage img{
+	margin-top: 30px;
+}
+.mainPage-appFeatures{
+	text-align: left;
+	display: flex !important;
+}
+
+.mainPage-frontpage-appFeatures-text{
+	margin-right: 20px;
+}
+
+.mainPage-aboutUs-picture{
+	margin-top: 40px;
+}
+
+.mainPage-aboutUs img{
+	align-content: left;
+}
+
+.mainPage-frontpage img{
+	width: 300px;
+	height: 200px;
+	border-radius: 5px;
+}
+
+.mainPage-aboutUs{
+	display: flex !important;
+	flex-direction: row-reverse !important;
+}
+
+.mainPage-frontpage-aboutUs-text{
+	 margin-top: -20px;
+	 text-align: right;
+	 margin-left: 20px;
+}
+
+.mainPage-wrapper h1{
+	text-align: center;
+}
+
+.mainPage-image {
+	width: 200px;
+	height: 200px;
+	border-radius: 2px;
+}
+
+.mainpage-frontpage-aboutUs-text{
+	 margin-top: -20px;
+	 text-align: right;
+	 float: right;
+}
+
+.mainPage-wrapper h1{
+	text-align: center;
+}
